@@ -17,8 +17,8 @@ def gcd(a,b):
             gcd.append(i)
     return gcd[-1]
 
-num1=random.randint(0,100)
-num2=random.randint(0,100)
+num1=int(input("The first number for the greatest common divisor: "))
+num2=int(input("The second number for the greatest common divisor: "))
 
 
 print(f"The greatest common divisor of {num1} and {num2} is {gcd(num1,num2)}.")
