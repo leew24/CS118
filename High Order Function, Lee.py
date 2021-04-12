@@ -1,14 +1,10 @@
-import random
-
-def common_div(a):
-    div_a=[]
-    for i in range(1,a+1):
-        if a%i == 0:
-            div_a.append(i)
-    return div_a
-
-
 def gcd(a,b):
+    def common_div(a):
+        a_div = []
+        for i in range(1, a + 1):
+            if a % i == 0:
+                a_div.append(i)
+        return a_div
     cd_a=common_div(a)
     cd_b=common_div(b)
     gcd=[]
